@@ -23,40 +23,28 @@ optional arguments:
 
 Example Usage
 =============
-[hello@thar fwall]$ cat /var/log/firewall.log | ./fwall -q
 
-[+] 1.1.1.1         => 58968 #10709, 35303 #553, 113   #1
+  hello@thar fwall$ cat /var/log/firewall.log | ./fwall -q  
+    [+] 1.1.1.1         => 58968 #10709, 35303 #553, 113   #1  
+    [+] 1.1.1.2         => 6977  #1713, 6977  #54  
+    [+] 1.1.1.3         => 6957  #1643, 6957  #40  
+    [+] 1.1.1.4         => 6977  #1416, 6977  #18  
+    [+] 1.1.1.5         => 6977  #1407 
 
-[+] 1.1.1.2         => 6977  #1713, 6977  #54
-
-[+] 1.1.1.3         => 6957  #1643, 6957  #40
-
-[+] 1.1.1.4         => 6977  #1416, 6977  #18
-
-[+] 1.1.1.5         => 6977  #1407
-
-[hello@thar fwall]$ cat /var/log/firewall.log | ./fwall -H
-
-[+] 1.1.1.1         : 11263 Total hits
-
-[+] 1.1.1.2         : 1767 Total hits
-
-[+] 1.1.1.3         : 1683 Total hits
-
-[+] 1.1.1.4         : 1434 Total hits
-
-[+] 1.1.1.5         : 1407 Total hits
+  hello@thar fwall$ cat /var/log/firewall.log | ./fwall -H  
+    [+] 1.1.1.1         : 11263 Total hits 
+    [+] 1.1.1.2         : 1767 Total hits  
+    [+] 1.1.1.3         : 1683 Total hits  
+    [+] 1.1.1.4         : 1434 Total hits  
+    [+] 1.1.1.5         : 1407 Total hits  
 
 
-[hello@thar fwall]$ cat /var/log/firewall.log | ./fwall -Hp
+  hello@thar fwall$ cat /var/log/firewall.log | ./fwall -Hp  
+  [+] 213.92.8.4      : 11263 Total hits
 
-[+] 213.92.8.4      : 11263 Total hits
+  [ TCP ]
 
-    [ TCP ]
-
-      Port: 35303 => 553 Hits
-
-      Port: 58968 => 10709 Hits
-
-      Port: 113   => 1 Hits
+   Port: 35303 => 553 Hits  
+   Port: 58968 => 10709 Hits  
+   Port: 113   => 1 Hits  
 
