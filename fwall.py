@@ -73,9 +73,6 @@ class FWALL:
     def yield_host( self ):
         
         input_data = sys.stdin.readlines()
-        #with open( '/home/O_O/space/rpy/tmp.log', 'r' ) as fd:
-        #    input_data = fd.readlines()
-
 
         for logEntry in input_data:
             try:
