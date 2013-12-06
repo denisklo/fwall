@@ -8,7 +8,7 @@ class FWALL:
     def __init__( self ):
         
         self.obj = {
-            'regex' : re.compile( "^([\w]{3}\s[\d]{2})\s([\d]{2}:[\d]{2}:[\d]{2}).*SRC\=(.*?)\s.*PROTO\=(.*?)\s.*DPT\=(.*?)\s.*" ),
+            'regex' : re.compile( "^([\w]{3}\s+[\d]{1,2})\s([\d]{2}:[\d]{2}:[\d]{2}).*SRC\=(.*?)\s.*PROTO\=(.*?)\s.*DPT\=(.*?)\s.*" ),
             'hits'  : dict(),
             'rfcnt' : 0,
         }
